@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./Css/bootstrap.min.css">
+  <link rel="stylesheet" href="./Css/all.min.css">
+  <link rel="stylesheet" href="./Css/Style.css">
+</head>
+<body class="bkColor">
+  <div class="container ">
+    <h1 class="text-center mt-5 bookMarker">Bookmarker</h1>
+    <div class="bDash"></div>
+    <h2 class="text-center my-5 favorite"><i class="fa-solid fa-bookmark mx-2"></i>Bookmark your favorite sites<i class="fa-solid fa-bookmark mx-2"></i></h2>
+    <div>
+      <label for="siteName"><i class="fa-solid fa-book-bookmark me-2"></i>Site Name</label>
+      <input class="form-control mt-2" type="text" name="" id="siteName">
+
+      <label class="mt-3" for="siteUrl"><i class="fa-solid fa-link me-2"></i>Site URL</label>
+      <input class="form-control mt-2" type="text" name="" id="siteUrl">
+
+      <div class="text-center my-3">
+        <button type="button" onclick="getSubmit()" id="Submit" class="btn btn-secondary">Submit</button>
+      </div>
+
+      <div></div>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Index</th>
+            <th>Website Name</th>
+            <th>Visit</th>
+            <th>Delete</th>
+            <th>Update</th>
+          </tr>
+        </thead>
+        <tbody id="tbInformation">
+          
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <script src="./JS/all.min.js"></script>
+  <script src="./JS/bootstrap.bundle.min.js"></script>
+  <script src="./JS/main.js"></script>
+</body>
+</html>
